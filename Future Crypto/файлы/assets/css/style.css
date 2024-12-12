@@ -1,0 +1,569 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.mxw1200 {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.mxw1300 {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+body {
+    width: 100%;
+}
+
+main {
+    background: #F6F7F9;
+}
+/* шапка */
+header {
+    background: #ffffff;
+    padding: 20px 0px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+header .header__logo img {
+    width: 77px;
+    height: 77px;
+}
+
+.header__nav ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.header__nav ul li {
+    display: flex;
+    gap: 6px;
+}
+
+.header__nav ul li img {
+    width: 20px;
+    height: 18px;
+}
+
+.header__nav a {
+    font-weight: 500;
+    font-size: 14px;
+    color: #000;
+}
+
+.header__nav a:hover {
+    color: #7e7e7e;
+}
+
+
+.header__geo {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.header__geo select {
+    border: none;
+    text-decoration: underline;
+    outline: none;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.header__geo select option {
+    color: black;
+}
+
+.header__geo select option:hover {
+    background-color: #00093C;
+}
+
+.header__login {
+    display: flex;
+    gap: 40px;
+}
+
+.header__login span {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 162%;
+    color: #00093c;
+}
+
+.header__login a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 9px;
+
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    color: #000;
+}
+
+.header__login a p:hover {
+    color: #7e7e7e;
+}
+
+
+main .presentation {
+    background: url(../img/bg.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 526px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+main .presentation::after {
+    content: 'Менеджер хранения паролей Future Crypto';
+    color: #ffffff;
+    position: absolute;
+    top: 220px;
+    left: 350px;
+    width: 600px;
+    line-height: 70px;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+main .presentation::before {
+    content: 'Ваша безопасность - наш приоритет!';
+    position: absolute;
+    top: 400px;
+    left: 350px;
+    width: 600px;
+    font-weight: 500;
+    font-size: 20px;
+    color: #fff;
+}
+
+
+
+#partition {
+    margin-top: 100px;
+}
+
+
+
+.partition__container {
+    display: flex;
+    gap: 31px;
+}
+
+.partition__container .windows {
+    background: url(../img/windows.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 235px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+
+.partition__container .patrition__nav .patrit_header img {
+    margin-bottom: 20px;
+}
+
+
+.partition__container .patrition__nav .patrit_button {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.partition__container .patrition__nav .patrit_button a {
+    background-color: #fff;
+    padding: 15px 18px;
+    border-radius: 6px;
+    color: #000;
+    text-decoration: none;
+    position: relative;
+}
+
+.partition__container .patrition__nav .patrit_button a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    filter: blur(10px);
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.partition__container .patrition__nav .patrit_button a::after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #f7941d 0%, #27aae1 100%);
+    filter: blur(10px);
+    opacity: 0.3;
+    z-index: -2;
+}
+
+#auto {
+    margin-top: 140px;
+}
+
+.auto__container {
+    background: url(../img/auto.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 1290px;
+    height: 664px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#help {
+    margin-bottom: 82px;
+}
+
+.help__container h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 142%;
+    color: #000;
+    margin-bottom: 42px;
+}
+
+.help__container .help__block {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.help__container .help__block .help__box img {
+    margin-bottom: 20px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.help__container .help__block .help__box p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 170%;
+    color: #000;
+}
+
+
+#start {
+    margin-bottom: 100px;
+}
+.start__container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.start_block.one {
+    border-radius: 20px;
+    background: #f7bc75;
+    width: 100%;
+    padding: 30px 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.start_block.one .date h2 {
+    text-align: center;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 64px;
+    color: #000;
+}
+
+.start_block.one .date p {
+    font-weight: 500;
+    font-size: 36px;
+    color: #000;
+}
+
+.start_block.one .info h3 {
+    font-weight: 500;
+    font-size: 36px;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+.start_block.one .info p {
+    font-weight: 400;
+    font-size: 18px;
+    color: #333;
+}
+
+.start_block.one a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 17px 64px;
+    border: 2px solid #000;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    transition: color 0.3s ease, background-color 0.3s ease, stroke 0.3s ease;
+}
+
+.start_block.one a:hover {
+    color: #f7bc75;
+    background-color: #000;
+}
+
+.start_block.one a:hover svg path {
+    stroke: #f7bc75;
+}
+
+
+.start__row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.start__row .start_block.two {
+    width: 480px;
+    border-radius: 20px;
+    background: #c5ddff;
+    padding: 33px 20px 50px 20px;
+}
+
+.start__row .start_block.two img {
+    margin: 0 auto;
+    display: block;
+}
+
+.start__row .start_block.two h3 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 24px;
+    margin: 37px 0px 30px 0px;
+}
+
+.start__row .start_block.two p {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+.start_block.two a {
+    text-align: center;
+    text-decoration: none;
+    color: #00093C;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 12px 61px;
+    border: 2px solid #00093C;
+    border-radius: 10px;
+    margin: 0px 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 16px;
+    transition: color 0.3s ease, background-color 0.3s ease, stroke 0.3s ease;
+}
+
+.start_block.two a:hover {
+    color: #C5DDFF;
+    background-color: #00093C;
+}
+
+.start_block.two a:hover svg path {
+    stroke: #C5DDFF;
+}
+
+
+.start__row .start__mini {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.start__row .start__mini .top {
+    display: flex;
+    gap: 20px;
+}
+
+.start__row .start__mini .start_block.three {
+    background: #b8efcf;
+    padding: 39px 60px 46px 60px;
+    width: 330px;
+    height: 220px;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.start__row .start__mini .start_block.four {
+    background: #ffeef6;
+    padding: 39px 60px 46px 60px;
+    width: 330px;
+    height: 220px;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.start__row .start__mini .start_block.three img,
+.start__row .start__mini .start_block.four img {
+    margin: 0 auto;
+    display: block;
+}
+.start__row .start__mini .start_block.three h3,
+.start__row .start__mini .start_block.four h3 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 24px;
+    margin-top: 40px;
+}
+
+
+
+.start__row .start__mini .start_block.five {
+    background: #ffe38e;
+    border-radius: 20px;
+    display: flex;
+    gap: 52px;
+    padding: 57px 80px 54px 50px;
+}
+
+.start__row .start__mini .start_block.five .info_five {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.start__row .start__mini .start_block.five .info_five h3 {
+    font-weight: 500;
+    font-size: 24px;
+}
+.start__row .start__mini .start_block.five .info_five p {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+
+
+
+
+
+#comment {
+    background: url(../img/comment.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#comment h1  {
+    content: 'Отзывы наших студентов';
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 44px;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.comment__row {
+    display: flex;
+    gap: 20px;
+
+}
+
+.comment__row .comment {
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px 20px 18px 20px;
+}
+
+.comment__row .comment .header {
+    display: flex;
+    gap: 10px;
+}
+.comment__row .comment .header img {
+    width: 40px;
+    height: 40px;
+}
+.comment__row .comment .header .name {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.comment__row .comment .header .name h4 {
+    font-weight: 700;
+    font-size: 16px;
+}
+.comment__row .comment .header .name p {
+    font-weight: 500;
+    font-size: 13px;
+    color: #4f4f4f;
+}
+
+.comment__row .comment .main p{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 157%;
+    color: #000;
+}
+
+.comment__row .comment .footer{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.comment__row .comment .footer p{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 157%;
+    color: #4f4f4f;
+}
+
+.comment {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
